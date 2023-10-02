@@ -66,7 +66,7 @@ const memoizedGetBlogStats = _.memoize(async () => {
         // Fetch data from the external API 
         const response = await axios.get(API_URL, {
             headers: {
-                'x-hasura-admin-secret': process.env.HASURA_ADMIN_SECRET
+                'x-hasura-admin-secret': "32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6"
             }
         });
 
@@ -109,7 +109,7 @@ const memoizedSearchBlogs = _.memoize(async (query) => {
         // Fetch data from the external API 
         const response = await axios.get(API_URL, {
             headers: {
-                'x-hasura-admin-secret': process.env.HASURA_ADMIN_SECRET
+                'x-hasura-admin-secret': "32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6"
             }
         });
 
